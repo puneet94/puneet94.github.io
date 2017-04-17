@@ -10,18 +10,60 @@ body, html {
 .bg {
     /* The image used */
     background-image: url("./image.PNG");
-
-
+    position: relative;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.mainContent{
+  text-align: center;
+}
+.imageContent{
+  display: inline-block;
+  width: 49%;
+}
+.phoneContent{
+  display: inline-block;
+  width:49%;
+  text-align:center;
+}
+h1,h5{
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .imageContent{
+    display: block;
+    text-align: center;
+
+  }
+  .phoneContent{
+    display: block;
+    text-align:center;
+  }
+  .mainContent{
+    position: relative;
+
+  }
+}
 </style>
 </head>
 <body>
 
-<div class="bg"></div>
+<div class="bg">
+  <div class="mainContent">
+    <div class="imageContent">
+        <img src="./icon.png" alt="">
+        <h1>Petal Chat</h1>
+        <h5>Bringing people Closer</h5>
+
+    </div>
+    <div class="phoneContent">
+      <img src="./icon.png" alt="">
+    </div>
+
+  </div>
+</div>
 
 </body>
 </html>
